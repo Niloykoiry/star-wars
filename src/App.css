@@ -1,38 +1,38 @@
-.App {
+body {
+  background-image: url("./images/galaxy.webp");
+  background-position: center;
+  background-size: cover;
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.logo {
+  height: 6rem;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.error {
+  color: crimson;
+  font-size: 1.5rem;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.char-table {
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+    rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+.char-table th,
+.char-table td {
+  font-size: 1.2rem;
+}
+.char-table th {
+  color: #ffc107;
+}
+.char-table td {
+  color: #fff;
+}
+.char-pagination ul {
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.char-pagination button {
+  background-color: #fff;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.char-pagination button:hover {
+  background-color: #ed6c02;
+  color: #fff;
 }
